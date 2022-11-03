@@ -1,5 +1,5 @@
 import { ModuleWithProviders, NgModule } from '@angular/core';
-import { CFG_PATH, HelloWorldConfigService } from './hello-world-config.service';
+import { CFG_PATH, ConfigService } from './config.service';
 import { ToolsComponent } from './tools.component';
 
 @NgModule({
@@ -19,15 +19,15 @@ export class ToolsModule {
    * @returns root
    */
   public static forRoot(
-    config: string
+    configPath: string = 'defaultValue'
   ): ModuleWithProviders<ToolsModule> {
     return {
       ngModule: ToolsModule,
       providers: [
-        HelloWorldConfigService,
+        ConfigService,
         {
           provide: CFG_PATH,
-          useValue: 'prueba',
+          useValue: configPath,
         }
         /* {
           provide: APP_INITIALIZER,

@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { HelloWorldConfigService } from 'dist/tools';
+import { ConfigService } from 'dist/tools';
 
 @Component({
   selector: 'app-root',
@@ -8,8 +8,8 @@ import { HelloWorldConfigService } from 'dist/tools';
 })
 export class AppComponent {
   title = '';
-  constructor(helloWorld: HelloWorldConfigService) {
-    this.title = helloWorld.message;
-    console.log(helloWorld.studentsData());
+  constructor(configService: ConfigService) {
+    this.title = configService.message;
+    console.log(configService.studentsData());
   }
 }

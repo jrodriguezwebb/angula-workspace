@@ -6,7 +6,7 @@ export const CFG_PATH = new InjectionToken<string>(
 );
 
 @Injectable()
-export class HelloWorldConfigService {
+export class ConfigService {
 
   constructor(
     private injector: Injector,
@@ -18,7 +18,7 @@ export class HelloWorldConfigService {
 
   public studentsData(): any[] {
     const configPath = this.injector.get<string>(CFG_PATH);
-    console.log(configPath, 'configPath');
+    console.log('configPath', configPath);
     return studentsData;
   }
 }
