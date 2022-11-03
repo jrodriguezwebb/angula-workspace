@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { HelloWorldService } from 'projects/tools/src/lib/hello-world.service';
+import { HelloWorldService } from 'dist/tools';
 
 @Component({
   selector: 'app-root',
