@@ -18,8 +18,7 @@
     "module": "es2020",
     "lib": ["es2018", "dom"],
     "paths": {
-      "dist/tools": ["dist/tools/tools", "dist/tools"],
-      "@tools": ["projects/tools/src/public-api"]
+      "dist/tools": ["dist/tools"]
     },
     "resolveJsonModule": true,
     "esModuleInterop": true,

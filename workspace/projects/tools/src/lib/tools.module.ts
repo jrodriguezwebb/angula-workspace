@@ -1,5 +1,5 @@
-import { ModuleWithProviders, NgModule } from '@angular/core';
 import { CFG_PATH, ConfigService } from './config.service';
+import { ModuleWithProviders, NgModule } from '@angular/core';
 import { ToolsComponent } from './tools.component';
 
 @NgModule({
@@ -29,12 +29,6 @@ export class ToolsModule {
           provide: CFG_PATH,
           useValue: configPath,
         }
-        /* {
-          provide: APP_INITIALIZER,
-          useFactory: initializer,
-          deps: [HelloWorldService],
-          multi: true,
-        } */,
       ],
     };
   }

@@ -1,5 +1,5 @@
-import { Injectable, InjectionToken, Injector } from '@angular/core';
 import studentsData from '../assets/data.json';
+import { Injectable, InjectionToken, Injector } from '@angular/core';
 
 export const CFG_PATH = new InjectionToken<string>(
   'CFG_PATH'
