@@ -10,5 +10,6 @@ export class AppComponent {
   title = '';
   constructor(helloWorld: HelloWorldService) {
     this.title = helloWorld.message;
+    console.log(helloWorld.studentsData());
   }
 }
