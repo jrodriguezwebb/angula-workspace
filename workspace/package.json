@@ -8,9 +8,11 @@
     "build:all": "ng build tools && ng build landing",
     "test": "ng test",
     "lint": "ng lint",
-    "e2e": "ng e2e"
+    "e2e": "ng e2e",
+    "postinstall": "node postinstall"
   },
   "private": true,
+  "type": "module",
   "dependencies": {
     "@angular/animations": "~11.2.14",
     "@angular/common": "~11.2.14",
